@@ -1,0 +1,106 @@
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML $ mkdir JS
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML $ touch app.js
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML $ nano app.css
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML $ ls
+app.css  app.js  CSS  JS
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML $ cd CSS/
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML/CSS $ nano app.css
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML/CSS $ cd ..
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML $ cd JS/
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML/JS $ app.js
+app.js: comando não encontrado
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML/JS $ nano app.js
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML/JS $ nano app.js
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML/JS $ cd ..
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML $ nano index.html
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML $ git add .
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML $ git commit -m "adicionei novos repositorios"
+[master e0d8bb0] adicionei novos repositorios
+ 5 files changed, 4 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 HTML/CSS/app.css
+ create mode 100644 HTML/JS/app.js
+ create mode 100644 HTML/index.html
+ create mode 100644 para_ignorar/Alguma coisa
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML $ git push origin master
+Username for 'https://github.com': KeslleyWillian
+Password for 'https://KeslleyWillian@github.com': 
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (8/8), 702 bytes | 0 bytes/s, done.
+Total 8 (delta 0), reused 0 (delta 0)
+To https://github.com/KeslleyWillian/PrimeiroDia.git
+   d5b653d..e0d8bb0  master -> master
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML $ git remote add origin https://github.com/KeslleyWillian/html.git
+fatal: remote origin already exists.
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (utilize "git add/rm <arquivo>..." para atualizar o que será submetido)
+  (utilize "git checkout -- <arquivo>..." para descartar mudanças no diretório de trabalho)
+
+	modified:   ../.gitignore
+	modified:   index.html
+	deleted:    ../para_ignorar/Alguma coisa
+
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	../PassoPasso
+
+nenhuma modificação adicionada à submissão (utilize "git add" e/ou "git commit -a")
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML $ git init
+Initialized empty Git repository in /home/aluno/Área de Trabalho/Processo seletivo/Primeiro dia/HTML/.git/
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML $ git remote add origin https://github.com/KeslleyWillian/html.git
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML $ git status
+No ramo master
+
+Submissão inicial.
+
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	CSS/
+	JS/
+	index.html
+
+nada adicionado ao envio mas arquivos não registrados estão presentes (use "git add" to registrar)
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML $ git add .
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML $ git commit -m "Adicionando um treco"
+[master (root-commit) 3646d0b] Adicionando um treco
+ 5 files changed, 60 insertions(+)
+ create mode 100644 CSS/app.css
+ create mode 100644 JS/app.js
+ create mode 100644 app.html
+ create mode 100644 img.jpg
+ create mode 100644 index.html
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML $ git push origin master
+Username for 'https://github.com': KeslleyWillian
+Password for 'https://KeslleyWillian@github.com': 
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 261.81 KiB | 0 bytes/s, done.
+Total 9 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/KeslleyWillian/html.git
+ * [new branch]      master -> master
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML $ git add .
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML $ git commit -m "Adicionando treco versao 2"
+[master 02c5b0e] Adicionando treco versao 2
+ 5 files changed, 61 insertions(+), 7 deletions(-)
+ create mode 100644 Pahpe.png
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia/HTML $ git push origin master
+Username for 'https://github.com': KeslleyWillian
+Password for 'https://KeslleyWillian@github.com': 
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 116.56 KiB | 0 bytes/s, done.
+Total 9 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/KeslleyWillian/html.git
+   3646d0b..02c5b0e  master -> master
+
