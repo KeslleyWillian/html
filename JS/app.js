@@ -1,1 +1,1 @@
-Nadaqui
+alert('Hello World');
