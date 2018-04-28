@@ -1,0 +1,513 @@
+
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git commit -m "Meu primeiro commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git config  --global user.name "KeslleyWillian"
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/KeslleyWillian/PrimeiroDia.git'
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git config --global user.email keslleywillian@gmail.com
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/KeslleyWillian/PrimeiroDia.git'
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git commit -m "Meu primeiro commit"
+[master (root-commit) 85fdbe4] Meu primeiro commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 "Mais outro diretorio/#01 - Introdu\303\247\303\243o a Git com Github - Bootcamp XP Infocorp.pdf"
+ create mode 100644 Mais um diretorio/Batata
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git push -u origin master
+Username for 'https://github.com': KeslleyWillian
+Password for 'https://KeslleyWillian@github.com': 
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 819.33 KiB | 0 bytes/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To https://github.com/KeslleyWillian/PrimeiroDia.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	Dicas
+
+nada adicionado ao envio mas arquivos não registrados estão presentes (use "git add" to registrar)
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ mkdir css
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ mkdir JS
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ touch index.txt
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	Dicas
+	index.txt
+
+nada adicionado ao envio mas arquivos não registrados estão presentes (use "git add" to registrar)
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git add index.txt
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Mudanças a serem submetidas:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   index.txt
+
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	Dicas
+
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Mudanças a serem submetidas:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   index.txt
+
+Changes not staged for commit:
+  (utilize "git add <arquivo>..." para atualizar o que será submetido)
+  (utilize "git checkout -- <arquivo>..." para descartar mudanças no diretório de trabalho)
+
+	modified:   index.txt
+
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	Dicas
+
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Mudanças a serem submetidas:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   index.txt
+
+Changes not staged for commit:
+  (utilize "git add <arquivo>..." para atualizar o que será submetido)
+  (utilize "git checkout -- <arquivo>..." para descartar mudanças no diretório de trabalho)
+
+	modified:   index.txt
+
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	Dicas
+
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git add index.text
+fatal: pathspec 'index.text' não encontrou nenhum arquivo
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git add index.txt
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git commit -m "Outro commit"
+[master d5b653d] Outro commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.txt
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git push origin master
+Username for 'https://github.com': KeslleyWillian
+Password for 'https://KeslleyWillian@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 277 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/KeslleyWillian/PrimeiroDia.git
+   85fdbe4..d5b653d  master -> master
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ nano .gitignore
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ nano .gitignore
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ nano .gitignore
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ mkdir para_ignorar
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	.gitignore
+	Dicas
+	para_ignorar/
+
+nada adicionado ao envio mas arquivos não registrados estão presentes (use "git add" to registrar)
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	.gitignore
+	para_ignorar/
+
+nada adicionado ao envio mas arquivos não registrados estão presentes (use "git add" to registrar)
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git add .
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git ststus
+git: 'ststus' não é um comando git. Veja 'git --help'.
+
+Você quis dizer isso?
+	status
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Mudanças a serem submetidas:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .gitignore
+	new file:   para_ignorar/Alguma coisa
+
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ nano status
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Mudanças a serem submetidas:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .gitignore
+	new file:   para_ignorar/Alguma coisa
+
+Changes not staged for commit:
+  (utilize "git add <arquivo>..." para atualizar o que será submetido)
+  (utilize "git checkout -- <arquivo>..." para descartar mudanças no diretório de trabalho)
+
+	modified:   .gitignore
+
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Mudanças a serem submetidas:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .gitignore
+	new file:   para_ignorar/Alguma coisa
+
+Changes not staged for commit:
+  (utilize "git add/rm <arquivo>..." para atualizar o que será submetido)
+  (utilize "git checkout -- <arquivo>..." para descartar mudanças no diretório de trabalho)
+
+	modified:   .gitignore
+	deleted:    para_ignorar/Alguma coisa
+
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git log
+commit d5b653d2e049e98eafb3c6244911d1eed677bb8c
+Author: KeslleyWillian <keslleywillian@gmail.com>
+Date:   Sat Apr 28 05:36:57 2018 -0400
+
+    Outro commit
+
+commit 85fdbe421b89863d3c10acf871e59768c293308f
+Author: KeslleyWillian <keslleywillian@gmail.com>
+Date:   Sat Apr 28 05:19:24 2018 -0400
+
+    Meu primeiro commit
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ git clone https://github.com/ruba3000/primeiro-dia
+Cloning into 'primeiro-dia'...
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 0), reused 5 (delta 0), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+Checking connectivity... done.
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ ls
+CSS  index.txt  JS  Mais outro diretorio  Mais um diretorio  para_ignorar  primeiro-dia
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo/Primeiro dia $ cd ..
+aluno@LAB2B5 ~/Área de Trabalho/Processo seletivo $ cd ..
+aluno@LAB2B5 ~/Área de Trabalho $ git clone https://github.com/ruba3000/primeiro-dia
+Cloning into 'primeiro-dia'...
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 0), reused 5 (delta 0), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+Checking connectivity... done.
+aluno@LAB2B5 ~/Área de Trabalho $ git clone https://github.com/ruba3000/primeiro-dia Ruba
+Cloning into 'Ruba'...
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 0), reused 5 (delta 0), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+Checking connectivity... done.
+aluno@LAB2B5 ~/Área de Trabalho $ git status
+fatal: Not a git repository (or any of the parent directories): .git
+aluno@LAB2B5 ~/Área de Trabalho $ git status
+fatal: Not a git repository (or any of the parent directories): .git
+aluno@LAB2B5 ~/Área de Trabalho $ /Ruba
+bash: /Ruba: Arquivo ou diretório não encontrado
+aluno@LAB2B5 ~/Área de Trabalho $ Ruba
+Ruba: comando não encontrado
+aluno@LAB2B5 ~/Área de Trabalho $ ls
+primeiro-dia  Processo seletivo  Ruba
+aluno@LAB2B5 ~/Área de Trabalho $ cd Ruba/
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ ls
+#01 - Introdução a Git com Github.pdf  2  3d-render-medico-imagem-macho-figura-cerebro-destacado_1048-5873.jpg
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	3d-render-medico-imagem-macho-figura-cerebro-destacado_1048-5873.jpg
+
+nada adicionado ao envio mas arquivos não registrados estão presentes (use "git add" to registrar)
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	MenteHumana.jpg
+
+nada adicionado ao envio mas arquivos não registrados estão presentes (use "git add" to registrar)
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git push origin master
+Username for 'https://github.com': KeslleyWillian
+Password for 'https://KeslleyWillian@github.com': 
+remote: Permission to ruba3000/primeiro-dia.git denied to KeslleyWillian.
+fatal: unable to access 'https://github.com/ruba3000/primeiro-dia/': The requested URL returned error: 403
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git commit -m "Commit do Ruba"
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Arquivos não monitorados:
+	MenteHumana.jpg
+
+nada adicionado ao envio mas arquivos não registrados estão presentes
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git commit -m "Commit do Ruba"
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Arquivos não monitorados:
+	MenteHumana.jpg
+
+nada adicionado ao envio mas arquivos não registrados estão presentes
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git push origin master
+Username for 'https://github.com': KeslleyWillian 
+Password for 'https://KeslleyWillian@github.com': 
+Everything up-to-date
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	MenteHumana.jpg
+
+nada adicionado ao envio mas arquivos não registrados estão presentes (use "git add" to registrar)
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	MenteHumana.jpg
+
+nada adicionado ao envio mas arquivos não registrados estão presentes (use "git add" to registrar)
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git add .
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git commit -m "Adicionado imagem no repositório do Ruba"
+[master 493099a] Adicionado imagem no repositório do Ruba
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 MenteHumana.jpg
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git status
+No ramo master
+Seu ramo está à frente de 'origin/master' por 1 submissão.
+  (use "git push" to publish your local commits)
+nada a submeter, diretório de trabalho vazio
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git push origin master
+Username for 'https://github.com': KeslleyWillian
+Password for 'https://KeslleyWillian@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 31.53 KiB | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ruba3000/primeiro-dia
+   882a8fa..493099a  master -> master
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+nada a submeter, diretório de trabalho vazio
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git log
+commit 493099a53717c0084742775ac7d92a66d0c2175a
+Author: KeslleyWillian <keslleywillian@gmail.com>
+Date:   Sat Apr 28 06:43:52 2018 -0400
+
+    Adicionado imagem no repositório do Ruba
+
+commit 882a8fa3b7baee2b940f61e565d96a70b0239cc6
+Author: ruba3000 <rubenpipao@gmail.com>
+Date:   Sat Apr 28 05:24:29 2018 -0400
+
+    meu primeiro commite
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git status
+No ramo master
+Your branch is up-to-date with 'origin/master'.
+nada a submeter, diretório de trabalho vazio
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git add.
+git: 'add.' não é um comando git. Veja 'git --help'.
+
+Você quis dizer isso?
+	add
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git add .
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git commit -m "Adicionando outra imagem no repositório do rubens"
+[master 6864e92] Adicionando outra imagem no repositório do rubens
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 images.jpeg
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git push origin master
+Username for 'https://github.com': KeslleyWillian            
+Password for 'https://KeslleyWillian@github.com': 
+To https://github.com/ruba3000/primeiro-dia
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/ruba3000/primeiro-dia'
+dica: Updates were rejected because the remote contains work that you do
+dica: not have locally. This is usually caused by another repository pushing
+dica: to the same ref. You may want to first integrate the remote changes
+dica: (e.g., 'git pull ...') before pushing again.
+dica: See the 'Note about fast-forwards' in 'git push --help' for details.
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git pull
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/ruba3000/primeiro-dia
+   493099a..9b2eb44  master     -> origin/master
+Merge made by the 'recursive' strategy.
+ adicionado no rep ruba3000 | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+ create mode 100644 adicionado no rep ruba3000
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git status
+No ramo master
+Seu ramo está à frente de 'origin/master' por 2 submissões.
+  (use "git push" to publish your local commits)
+nada a submeter, diretório de trabalho vazio
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git pull
+Already up-to-date.
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git status
+No ramo master
+Seu ramo está à frente de 'origin/master' por 2 submissões.
+  (use "git push" to publish your local commits)
+nada a submeter, diretório de trabalho vazio
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git status
+No ramo master
+Seu ramo está à frente de 'origin/master' por 2 submissões.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (utilize "git add/rm <arquivo>..." para atualizar o que será submetido)
+  (utilize "git checkout -- <arquivo>..." para descartar mudanças no diretório de trabalho)
+
+	deleted:    images.jpeg
+
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	Paleontology.jpeg
+
+nenhuma modificação adicionada à submissão (utilize "git add" e/ou "git commit -a")
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git add .
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git commit -m "Adicionando outra imagem no repositório do rubens"
+[master 24227d9] Adicionando outra imagem no repositório do rubens
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename images.jpeg => Paleontology.jpeg (100%)
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git push origin master
+Username for 'https://github.com': KeslleyWillian
+Password for 'https://KeslleyWillian@github.com': 
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 11.75 KiB | 0 bytes/s, done.
+Total 7 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/ruba3000/primeiro-dia
+   9b2eb44..24227d9  master -> master
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git checkout -b Batata
+Switched to a new branch 'Batata'
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git status
+No ramo Batata
+nada a submeter, diretório de trabalho vazio
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git add .
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git add .
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git commit -m "Adicionando arquivo na ramificacao"
+[Batata 9c931e3] Adicionando arquivo na ramificacao
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Ramificacao/Arquivo
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git push origin ramificacao
+error: src refspec ramificacao does not match any.
+error: failed to push some refs to 'https://github.com/ruba3000/primeiro-dia'
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git push origin Batata
+Username for 'https://github.com': KeslleyWillian
+Password for 'https://KeslleyWillian@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 341 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ruba3000/primeiro-dia
+ * [new branch]      Batata -> Batata
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> Batata
+
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git show branch
+fatal: ambiguous argument 'branch': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git show-branch
+* [Batata] Adicionando arquivo na ramificacao
+ ! [master] Adicionando outra imagem no repositório do rubens
+--
+*  [Batata] Adicionando arquivo na ramificacao
+*+ [master] Adicionando outra imagem no repositório do rubens
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git merge
+Already up-to-date.
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git merge Batata
+Updating 24227d9..9c931e3
+Fast-forward
+ Ramificacao/Arquivo | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Ramificacao/Arquivo
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git log --graph --pretty=oneline --abbrev-commit
+* 9c931e3 Adicionando arquivo na ramificacao
+* 24227d9 Adicionando outra imagem no repositório do rubens
+*   33cc295 Merge branch 'master' of https://github.com/ruba3000/primeiro-dia
+|\  
+| * 9b2eb44 adiciona adicionado rep rub3000
+* | 6864e92 Adicionando outra imagem no repositório do rubens
+|/  
+* 493099a Adicionado imagem no repositório do Ruba
+* 882a8fa meu primeiro commite
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ ^C
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ ^C
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ ls
+#01 - Introdução a Git com Github.pdf  2  adicionado no rep ruba3000  MenteHumana.jpg  Paleontology.jpeg  Ramificacao
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git add .
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git commit -m "Adicionando o ultimo treco"
+No ramo master
+Seu ramo está à frente de 'origin/master' por 1 submissão.
+  (use "git push" to publish your local commits)
+nada a submeter, diretório de trabalho vazio
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ git push origin master
+Username for 'https://github.com': KeslleyWillian
+Password for 'https://KeslleyWillian@github.com': 
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/ruba3000/primeiro-dia
+   24227d9..9c931e3  master -> master
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ ^C
+aluno@LAB2B5 ~/Área de Trabalho/Ruba $ 
+
